@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scroll {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #152237;
+}
+
+.pic-animation {
+  animation: animate 2s infinite ease alternate;
+
+  @keyframes animate {
+    to {
+      transform: translateY(30px);
+    }
+  }
+}
+
+.text-animation {
+  font-weight: 800; 
+  font-size: 50px;
+  line-height: 60px;
+  color: transparent; 
+  -webkit-text-stroke: 1px #152237; 
+  cursor: pointer; 
+  position: relative;
+}
+
+.text-animation::after {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-animation:hover::after {
+   animation: moveText 1s linear both;
+
+   @keyframes moveText {
+    to {
+      width: 100%;
+    }
+   }
+}
