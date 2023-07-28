@@ -4,7 +4,7 @@ import "../../index.css";
 
 const Contact = () => {
   return (
-    <section className="md:max-w-[100%] bg-[#fffefe] md:min-h-[110vh]">
+    <section id="contact" className="md:max-w-[100%] bg-[#fffefe] md:min-h-[110vh]">
       <div className="max-w-[90%] flex md:flex-row min-h-[100vh] mx-auto sm:flex-col justify-between items-center gap-[50px] sm:pt-[50px] md:py-[100px]">
         <div className="flex-1 flex items-center border-[#FF4848] rounded-lg border-2 p-[50px] sm:w-[500px]">
           <form className="w-[100%] flex flex-col gap-10">

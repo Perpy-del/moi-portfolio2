@@ -5,7 +5,7 @@ import "../../index.css";
 const About = () => {
   return (
     // <section className="md:max-w-[100%] bg-[#fffefe] md:min-h-[110vh]">
-      <div className="flex sm:flex-col-reverse md:flex-row md:max-w-[90%] sm:max-w-[95%] snap-start scroll-smooth overflow-y-auto custom-scroll md:mx-[5rem] sm:mx-auto md:min-h-[110vh] sm:min-h-[140vh] items-center justify-center md:gap-[50px] z-[-1]  md:py-[5rem]">
+      <div id="about" className="flex sm:flex-col-reverse md:flex-row md:max-w-[90%] sm:max-w-[95%] snap-start scroll-smooth overflow-y-auto custom-scroll md:mx-[5rem] sm:mx-auto md:min-h-[110vh] sm:min-h-[140vh] items-center justify-center md:gap-[50px] z-[-1]  md:py-[5rem]">
         <div className="flex-3 md:ml-[30px] md:mr-[10px] mt-[-30px]">
           <img
             src="/img/pepe.jpg"

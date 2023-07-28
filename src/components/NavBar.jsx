@@ -15,15 +15,18 @@ const NavBar = () => {
           </a>
           <ul className={navClasses.list}>
             {navLinks.map((link) => (
+              <a href={`#${link.id}`}>
               <li key={link.id} className={navClasses.listItem}>
                 {link.title}
               </li>
+              </a>
             ))}
           </ul>
         </div>
         <div className={navClasses.icons}>
-          <button className={navClasses.button}>Resume</button>
-          <button className={navClasses.button}>Hire Me</button>
+        <a href="https://docs.google.com/document/d/1IkSLLwGvNU290riQiBP7rdgpi9uVJn8TYvnOg__fc3I/edit?usp=sharing"><button className={navClasses.button}>Resume</button></a>
+        <a href="https://www.linkedin.com/in/perpydev/">
+          <button className={navClasses.button}>Hire Me</button></a>
         </div>
       </div>
       <div>
@@ -42,8 +45,10 @@ const NavBar = () => {
           </div>
         </div>
         <div className="flex gap-3 absolute right-4 top-5 md:hidden">
-          <button className={navClasses.button}>Resume</button>
+          <a href="https://docs.google.com/document/d/1IkSLLwGvNU290riQiBP7rdgpi9uVJn8TYvnOg__fc3I/edit?usp=sharing"><button className={navClasses.button}>Resume</button></a>
+          <a href="https://www.linkedin.com/in/perpydev/">
           <button className={navClasses.button}>Hire Me</button>
+          </a>
         </div>
 
         <div
